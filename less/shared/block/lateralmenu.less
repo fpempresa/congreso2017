@@ -1,0 +1,67 @@
+@import "../variables.less";
+
+@lateralmenu-color-header:@color-default;
+@lateralmenu-color-item:darken(@lateralmenu-color-header,50%);
+@lateralmenu-color-line:@color-default;
+
+.lateral-menu__generic {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    list-style-type: none;
+    display: block; 
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.lateral-menu {
+     
+    &__menu {
+        padding: 0px 0px 0px 0px; 
+        list-style-type: none;
+    }
+    
+    &__header {
+        &:extend(.lateral-menu__generic);
+        color: @lateralmenu-color-header;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+    }    
+   
+    &__item {
+        &:extend(.lateral-menu__generic);
+        color: @lateralmenu-color-item;
+        text-transform: none;
+        font-size: 15px;
+        border-bottom: 1px solid transparent;
+        
+        &--selected {
+            border-bottom: 1px solid @lateralmenu-color-line;
+            color: @lateralmenu-color-header;
+        } 
+        &:hover { 
+            border-bottom: 1px solid @lateralmenu-color-line;
+        }        
+        
+        &__link {
+            color: @lateralmenu-color-item;
+            text-decoration: none!important;
+            font-size: 15px;
+            &:hover { 
+                color: @lateralmenu-color-header!important;
+            } 
+            
+            &:visited {
+                color: @lateralmenu-color-item;
+            }
+
+            &--selected {
+                color: @lateralmenu-color-header!important;
+            }
+            
+            
+        }         
+    } 
+    
+
+}

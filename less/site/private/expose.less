@@ -1,0 +1,56 @@
+@import "../../shared/variables.less";
+@import "../../shared/common/mixins-modifiers.less";
+
+.expose__container {
+    font-family:Arial Narrow, Arial, sans-serif;
+
+    @margin: 20px;
+    @padding: 30px;
+
+    margin-top: @margin;
+    margin-bottom: @margin;
+    margin-left: @margin/2;
+    margin-right: @margin/2;   
+
+    padding-top: @padding;
+    padding-bottom: @padding;
+    padding-left: @padding/2;
+    padding-right: @padding/2;
+    .generic-block--background-color-light-high;
+
+    height: 550px;
+}
+
+.expose__title {
+    font-size: 18px;
+    font-weight: bold;
+    .generic-block--color-dark-high;    
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    margin-top: 50px;
+}
+
+.expose__text {
+    font-size: 14px;
+    .generic-block--color-dark;
+}
+
+.expose__button {
+
+}
+
+.expose__separator {   
+    height:1px;
+    border:none;
+    .generic-block--color-dark-high;
+    .generic-block--background-color-dark-high;
+    width: 60%;
+    margin-top: 3px;
+}
+
+.expose__button {
+    position: absolute;
+    bottom: 50px;
+    left:0;
+    width: 100%;
+}

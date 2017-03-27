@@ -1,0 +1,177 @@
+.form__page {
+  background-color: #f6f8f7;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.form__page--no-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form__container {
+  border: 1px solid #005594;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+.form--center {
+  text-align: center;
+}
+.form__main-title {
+  font-size: 30px;
+  border-bottom: solid 2px;
+  display: inline;
+  padding-bottom: 10px;
+  font-family: Arial Narrow, Arial, sans-serif;
+}
+.form__label {
+  color: #005594;
+  font-family: Arial, sans-serif;
+}
+.form__title {
+  font-size: 23px;
+  color: #005594;
+  font-family: Arial Narrow, Arial, sans-serif;
+  border-color: #005594;
+}
+.form__title__link {
+  color: #005594;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form__title__link:hover {
+  text-decoration: none;
+}
+.form__text {
+  color: #005594;
+  font-family: Arial Narrow, Arial, sans-serif;
+}
+.form__text--help {
+  text-align: left;
+  padding-bottom: 10px;
+}
+.form__field {
+  border-color: #C7C7C7;
+}
+.form__button--default {
+  color: #ffffff;
+  background-color: #005594;
+  border-color: #00467b;
+}
+.form__button--default:hover,
+.form__button--default:focus,
+.form__button--default:active,
+.form__button--default.active,
+.open .dropdown-toggle.form__button--default {
+  color: #ffffff;
+  background-color: #003e6b;
+  border-color: #00233d;
+}
+.form__button--default:active,
+.form__button--default.active,
+.open .dropdown-toggle.form__button--default {
+  background-image: none;
+}
+.form__button--default.disabled,
+.form__button--default[disabled],
+fieldset[disabled] .form__button--default,
+.form__button--default.disabled:hover,
+.form__button--default[disabled]:hover,
+fieldset[disabled] .form__button--default:hover,
+.form__button--default.disabled:focus,
+.form__button--default[disabled]:focus,
+fieldset[disabled] .form__button--default:focus,
+.form__button--default.disabled:active,
+.form__button--default[disabled]:active,
+fieldset[disabled] .form__button--default:active,
+.form__button--default.disabled.active,
+.form__button--default[disabled].active,
+fieldset[disabled] .form__button--default.active {
+  background-color: #005594;
+  border-color: #00467b;
+}
+.form__button--default .badge {
+  color: #005594;
+  background-color: #ffffff;
+}
+.form__button--primary {
+  color: #ffffff;
+  background-color: #3ec03e;
+  border-color: #38ad38;
+}
+.form__button--primary:hover,
+.form__button--primary:focus,
+.form__button--primary:active,
+.form__button--primary.active,
+.open .dropdown-toggle.form__button--primary {
+  color: #ffffff;
+  background-color: #34a134;
+  border-color: #297e29;
+}
+.form__button--primary:active,
+.form__button--primary.active,
+.open .dropdown-toggle.form__button--primary {
+  background-image: none;
+}
+.form__button--primary.disabled,
+.form__button--primary[disabled],
+fieldset[disabled] .form__button--primary,
+.form__button--primary.disabled:hover,
+.form__button--primary[disabled]:hover,
+fieldset[disabled] .form__button--primary:hover,
+.form__button--primary.disabled:focus,
+.form__button--primary[disabled]:focus,
+fieldset[disabled] .form__button--primary:focus,
+.form__button--primary.disabled:active,
+.form__button--primary[disabled]:active,
+fieldset[disabled] .form__button--primary:active,
+.form__button--primary.disabled.active,
+.form__button--primary[disabled].active,
+fieldset[disabled] .form__button--primary.active {
+  background-color: #3ec03e;
+  border-color: #38ad38;
+}
+.form__button--primary .badge {
+  color: #3ec03e;
+  background-color: #ffffff;
+}
+.form__button--danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.form__button--danger:hover,
+.form__button--danger:focus,
+.form__button--danger:active,
+.form__button--danger.active,
+.open .dropdown-toggle.form__button--danger {
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+.form__button--danger:active,
+.form__button--danger.active,
+.open .dropdown-toggle.form__button--danger {
+  background-image: none;
+}
+.form__button--danger.disabled,
+.form__button--danger[disabled],
+fieldset[disabled] .form__button--danger,
+.form__button--danger.disabled:hover,
+.form__button--danger[disabled]:hover,
+fieldset[disabled] .form__button--danger:hover,
+.form__button--danger.disabled:focus,
+.form__button--danger[disabled]:focus,
+fieldset[disabled] .form__button--danger:focus,
+.form__button--danger.disabled:active,
+.form__button--danger[disabled]:active,
+fieldset[disabled] .form__button--danger:active,
+.form__button--danger.disabled.active,
+.form__button--danger[disabled].active,
+fieldset[disabled] .form__button--danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.form__button--danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=form.css.map */

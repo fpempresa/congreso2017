@@ -1,0 +1,25 @@
+.generic-block--color-dark {
+  color: #005594;
+}
+.generic-block--color-dark-high {
+  color: #000000;
+}
+.generic-block--color-light {
+  color: #f7f9f8;
+}
+.generic-block--color-light-high {
+  color: #ffffff;
+}
+.generic-block--background-color-dark {
+  background-color: #005594;
+}
+.generic-block--background-color-dark-high {
+  background-color: #000000;
+}
+.generic-block--background-color-light {
+  background-color: #f7f9f8;
+}
+.generic-block--background-color-light-high {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=mixins-modifiers.css.map */

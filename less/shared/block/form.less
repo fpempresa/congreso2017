@@ -1,0 +1,143 @@
+@import "../variables.less";
+
+@form-page-color-background:@color-background-form-page;
+@form-container-color-border:@color-default;
+@form-container-color-background:@color-background-form;
+
+@button-color-background-default:@color-default;
+@button-color-foreground-default:#FFFFFF;    
+@button-color-background-primary:@color-alternative;
+@button-color-foreground-primary:#FFFFFF;   
+@button-color-background-danger:@color-danger;
+@button-color-foreground-danger:#FFFFFF;
+
+
+.form {
+    &__page {
+        background-color: @form-page-color-background;
+        padding-top:150px;
+        padding-bottom:50px;       
+        &--no-padding {
+            padding-top:10px;
+            padding-bottom:10px; 
+        }        
+    }
+
+    &__container {
+        border: 1px solid @form-container-color-border;
+        background-color:@form-container-color-background;
+        padding: 30px;       
+    }
+
+    &--center {
+        text-align: center;
+    }    
+
+    &__main-title {
+        font-size: 30px;     
+
+        border-bottom: solid 2px;
+        display: inline;
+        padding-bottom: 10px;
+        font-family:Arial Narrow, Arial, sans-serif;
+    }    
+
+    &__label {
+        color: @form-container-color-border;
+        font-family:Arial, sans-serif;
+    }
+
+
+    &__title {
+        font-size: 23px;   
+        color: @form-container-color-border;
+        font-family:Arial Narrow, Arial, sans-serif;
+        border-color: @form-container-color-border;
+        
+        &__link {
+            color: @form-container-color-border;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover { 
+                text-decoration: none;
+            }
+        }   
+    
+    }
+    
+   
+    
+    &__text {
+        color: @form-container-color-border;
+        font-family:Arial Narrow, Arial, sans-serif;
+    }
+
+    &__text--help {
+        text-align: left;
+        padding-bottom: 10px;
+
+    }
+
+    &__field {
+        border-color:#C7C7C7;
+    }
+
+    &__button {
+
+        &--default {
+            .button-variant(@button-color-background-default,@button-color-foreground-default);    
+        };
+
+        &--primary {
+            .button-variant(@button-color-background-primary,@button-color-foreground-primary);    
+        };
+
+        &--danger {
+            .button-variant(@button-color-background-danger,@button-color-foreground-danger);  
+        };
+
+
+    } 
+
+}
+
+
+
+.button-variant(@background,@font-color ) {
+    @border:darken(@background, 5%);
+    color: @font-color;
+    background-color: @background;
+    border-color: @border;
+
+    &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        .open .dropdown-toggle& {
+        color: @font-color;
+        background-color: darken(@background, 8%);
+        border-color: darken(@border, 12%);
+    }
+    &:active,
+        &.active,
+        .open .dropdown-toggle& {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+            &:focus,
+            &:active,
+            &.active {
+            background-color: @background;
+            border-color: @border;
+        }
+    }
+
+    .badge {
+        color: @background;
+        background-color: @font-color;
+    }
+}

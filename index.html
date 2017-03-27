@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app" ng-strict-di>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="II Congreso Nacional de Formación Profesional">
+        <meta name="author" content="fpempresa">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+        <title>III Congreso Nacional de Formación Profesional</title>       
+
+        <link href="./lib/bootstrap/css/bootstrap.css"                 rel="stylesheet" type="text/css" />
+        <link href="./lib/fontawesome/css/font-awesome.css"            rel="stylesheet" type="text/css" />
+        <link href="./css/site/site.css"                               rel="stylesheet" type="text/css" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = {
+                "message": "Este sitio web cookies propias y de terceros para ofrecer un mejor servicio.Si continua navegando asuminos que acepta su uso.  Mas información en",
+                "dismiss": "Aceptar",
+                "learnMore": "Politicas de Cookies", "link": "./cookies.html", "theme": "./lib/cookieconsent/cookieconsent.css"};
+        </script>
+
+        <script type="text/javascript" src="./lib/cookieconsent/cookieconsent.js"></script>
+        <!-- End Cookie Consent plugin -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68576909-2', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+
+    <body id="top"  ng-controller="IndexController" style="background-color: #F6F8F7" >   
+
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation"  >
+            <div class="container-fluid" >
+                <div class="navbar-header">
+                    <button id="buttonMenuHeader" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href ng-click="animateScroll.toElement('top')">
+                        <img src="./img/logo/logo.png"  alt="logo"  >&nbsp;
+                    </a>
+                </div>
+
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="hidden">
+                            <a href ng-click="animateScroll.toElement('top')" fpe-click-button-on-click="buttonMenuHeader"></a>
+                        </li>
+                        <li>
+                            <a  href="https://docs.google.com/forms/d/1t3exoGzI-2sW3ezXTVSC4hRVcn_Ir-QFSFCQ0UIdpxo/viewform?c=0&w=1" >INSCRIPCI&Oacute;N</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('donde')" fpe-click-button-on-click="buttonMenuHeader">DONDE</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('agenda')" fpe-click-button-on-click="buttonMenuHeader">AGENDA</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('alojamiento')" fpe-click-button-on-click="buttonMenuHeader">ALOJAMIENTO</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('objetivos')" fpe-click-button-on-click="buttonMenuHeader">OBJETIVOS</a>
+                        </li>                
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="intro" >
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+<!--                        <div class="col-xs-12 col-sm-12 col-md-12" style="color:#6E8654">  
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="alert alert-success section__text--size-extrahigh" role="alert" >
+                                <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;&nbsp;Ya disponible las <a  href ng-click="animateScroll.toElement('agenda')" >slides</a> y las <a href="./presentaciones/propuestas_para_un_impulso_de_la_formacion_profesional.pdf" target="_blank" >propuestas del congreso</a>
+                            </div> 
+-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12" >   
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12" style="color:#6E8654">                           
+                            <img src="img/site/texto_transparente.png" width="60%" height="60%" alt="" />
+                            <br>
+                            <p><a class="btn btn-xl form__button form__button--primary" href="https://docs.google.com/forms/d/1t3exoGzI-2sW3ezXTVSC4hRVcn_Ir-QFSFCQ0UIdpxo/viewform?c=0&w=1"    >INSCRIPCI&Oacute;N</a></p>
+                            <a href ng-click="animateScroll.toElement('donde')" style="color:#6E8654;border-color: #6E8654" class="btn button-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                            <br>                            
+                            <br>                            
+                            <br>                            
+                            <br>                            
+                            <br>                            
+                            <br>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+       
+
+        <section id="donde" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;DONDE&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h1>Jueves 2 de Junio</h1>
+                    <br>
+                </div> 
+            </div> 
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high"><strong>Escuela Superior de Hostelería y Turismo</strong> en el Paseo Puerta del Ángel, 5,28011 Madrid</p>
+                    <br>
+                </div>
+                
+            </div>  
+            <div class="row" >
+                <div class="col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.698897309691!2d-3.732483099999999!3d40.415520699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422808be16d79b%3A0xc6ba675637ab2bf3!2sEscuela+Superior+de+Hosteler%C3%ADa+y+Turismo!5e0!3m2!1ses!2ses!4v1462035007217" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h1>Viernes 3 de Junio</h1>
+                    <br>
+                </div> 
+            </div>             
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high"><strong>Sal&oacute;n de Actos de la Sede Operativa de Bankia (Torre bankia)</strong> en el Paseo de la Castellana, 189, 28046 Madrid</p>
+                    <br>
+                </div>
+            </div>  
+            <div class="row" >
+                <div class="col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.3742394483947!2d-3.6899468!3d40.466985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42291101450fcd%3A0x8685ba8bcac63b1d!2storre+bankia!5e0!3m2!1ses!2ses!4v1462035407870" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>            
+            <div class="row" >      
+                <div class="col-xs-8 col-xs-offset-2">
+                    <p class="section__text  section--color-dark-high section__text--size-high"> &iquest;Vienes en tren al congreso? Tienes un 30% de descuento en todos los trenes usando el n&uacute;mero de autorizaci&oacute;n <strong>301613182</strong>. Mas informaci&oacute;n <a href="TES_2016_01318.pdf" style="color:#005594" >aqui</a></p>
+                </div>
+            </div>
+            <div class="row" >       
+                <div class="col-xs-12">
+                    <a  href="http://www.renfe.com/"  ><img src="img/logo/logo_renfe.png" alt=""/></a>
+                </div>        
+            </div>            
+        </section>  
+
+
+        <section id="agenda" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;AGENDA&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+            <div class="row" >      
+                <div class="col-xs-12">
+                    <h3><strong>Jueves 2 de Junio: IES Escuela Superior de Hostelería y Turismo</strong></h3>
+                    <p>Primera jornada sólo para asistentes al congreso pertenecientes a Centros miembros de la Asociación.</p>
+
+
+                    <table class="table table-bordered table-striped">
+                        <tr class="active">
+                            <th style="width:  100px;text-align: center">Hora</th>
+                            <th style="text-align: center" colspan="2">Actividad</th>
+                        </tr>
+                        <tr>
+                            <td>15:30&nbsp;h.</td>
+                            <td colspan="2"><strong>Acreditacióny entrega de documentación</strong></td>
+                        </tr>
+                        <tr>
+                            <td>16:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Presentación del  III Congreso de FP “Formación Profesional: Pensando en el Futuro”</strong>
+                                <div style="text-align: left">
+                                    D. Joan Sarrión Ochando – Presidente de la Asociación de Centros de FP<br>
+                                </div>
+                            </td>
+                            
+                        </tr>
+                        <tr>                
+                            <td rowspan="2">&nbsp;<br>16:30&nbsp;h.<br>a<br>18:00&nbsp;h.</td>
+                            <td colspan="2"><strong>ACTIVIDADES SIMULTANEAS</strong></td>
+                        </tr>                
+                        <tr>                    
+
+                            <td >
+                                <strong>Opción A:Asistentes que no participen en el debate del Documento del Congreso de Propuestas para la FP</strong><br> 
+                                Visita guiada CENTROS DE FP DE MADRID<br>
+                                IES Escuela Superior de Hostelería y Turismo de Madrid <br>
+                                IES El Lago. (Familias de Administración, Informática y Comercio)
+                            </td>
+                            <td >
+                                <strong>Opción B:Asistentes que participen en la Mesa Técnica para eldebate del Documento del Congreso de Propuestas para la FP</strong><br>
+                                Debate y aprobación del Documento congresual.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Asamblea Anual de la Asociación de Centros de Formación Profesional “Fpempresa”.</strong>
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td>20:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Encuentro y Cena de Centros Asociados</strong> <br>en el Restaurante Pedagógico de la Escuela Superior de Hostelería y Turismo de Madrid e invitados<br>
+                                <br>
+                                <span style="font-style: italic;">Menú degustación elaborado y servido por los Alumnos y Profesores de  FP de los Ciclos de Hostelería de la Escuela</span> 
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>  
+
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h3><strong>Viernes 3 de Junio:Salón de Actos de la Sede Operativa de Bankia ( Torre Bankia)</strong></h3>
+
+                    <table class="table table-bordered table-striped">
+                        <tr class="active">
+                            <th style="min: 100px;text-align: center">Hora</th>
+                            <th style="text-align: center">Actividad</th>
+                        </tr>
+                        <tr>
+                            <td>09:00&nbsp;h.</td>
+                            <td>
+                                <strong>Acreditación y entrega de documentación</strong><br>
+                                <div style="text-align: left">
+                                     De todos los asistentes no acreditados hasta el momento<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09:45&nbsp;h.</td>
+                            <td>
+                                <strong>Inauguración de las Jornadas</strong><br>
+                                <div style="text-align: left">
+                                    D.&ordf; Cristina Cifuentes Cuencas – Presidenta de la comunidad de Madrid<br>
+                                    D. Jos&eacute; Ignacio Goirigolzarri Tellaeche – Presidente de Bankia<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00&nbsp;h.</td>
+                            <td>
+                                <strong>Perspectivas de la FP Dual en España</strong><br>
+                                <div style="text-align: left">
+                                    D. Juan Carlos Tejeda Hisado – Director de Formación de CEOE.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30&nbsp;h.</td>
+                            <td>
+                                <strong>Radiografía situación del empleo en titulaciones de  FP</strong><br>
+                                <div style="text-align: left">
+                                    D. Federico Muñiz Alonso – Subdirector General de Estadística e Información del SEPE. Ministerio de Empleo y Seguridad Social.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:00&nbsp;h.</td>
+                            <td>
+                                <strong>Movilidad internacional en Formación Profesional</strong><br>
+                                <div style="text-align: left">
+                                    D.&ordf; María Goretti Alonso de Castro – Directora Unidad de FP y Europass. SEPIE.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30&nbsp;h.</td>
+                            <td>
+                                <strong>Debate y turno de preguntas</strong><br>
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td>11:45&nbsp;h.</td>
+                            <td>
+                                Café - Descanso
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:15&nbsp;h.</td>
+                            <td>
+                                <strong>Nuevas estrategias metodológicas y participativas</strong><br>
+                                <div style="text-align: left">
+                                    D. Agustín Agirre Andonegi – Director de Métodos y Procesos de Aprendizaje de TKNIKA (Centro de investigación e innovación aplicada para FP)<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:45&nbsp;h.</td>
+                            <td>
+                                <strong>Compromiso por la FP</strong><br>
+                                <div style="text-align: left">
+                                    D.&ordf; Mercè Chacón – Directora FP Dual+ de Bankia<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:15&nbsp;h.</td>
+                            <td>
+                                <strong>Nuevos escenarios para la Formación Profesional en el Empleo</strong><br>
+                                <div style="text-align: left">
+                                    D. Alfonso Luengo Álvarez-Santullano – Director Gerente de la Fundación Estatal para la Formación en el Empleo<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:45&nbsp;h.</td>
+                            <td>
+                                <strong>Debate y turno de preguntas</strong><br>
+                            </td>
+                        </tr>                        
+                        <tr class="info">
+                            <td>14:00&nbsp;h.</td>
+                            <td>
+                                Comida ofrecida por el congreso
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:15&nbsp;h.</td>
+                            <td>
+                                <strong>Reconocimiento a una trayectoria: Jorge Arévalo.El modelo de Formación Profesional Vasco.</strong><br>
+                                <div style="text-align: left">
+                                    D. Jon Labaka Intxauspe. – Director de Innovación Tecnológica de TKNIKA. (Centro de investigación e innovación aplicada para FP).<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:45&nbsp;h.</td>
+                            <td>
+                                <strong>Pensando en el Futuro de la FP. La visión de la Asociación de Centros de FP FPempresa.</strong><br>
+                                <div style="text-align: left">
+                                    D. Joan Sarrión Ochando - Presidente de la Asociación de centros de FP, FPempresa<br>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>16:15&nbsp;h.</td>
+                            <td>
+                                <strong>Emprendimiento en Formación Profesional</strong><br>
+                                <div style="text-align: left">
+                                    D. Pablo Peñalver Alonso - Profesor del IES Consaburum de Consuegra (Toledo) con una larga trayectoria en procesos de innovación y desarrollo de habilidades emprendedoras.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:45&nbsp;h.</td>
+                            <td>
+                                <strong>Debate y turno de preguntas</strong><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00&nbsp;h.</td>
+                            <td>
+                                <strong>Relato del Congreso y Conclusiones.</strong><br>
+                                <div style="text-align: left">
+                                    D. Luis García Domínguez - Miembro de la Ejecutiva de la Asociación de Centros de FP FPempresa.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>17:15&nbsp;h.</td>
+                            <td>
+                                <strong>Clausura del Congreso</strong>
+                                <div style="text-align: left">
+                                    D. Sergio San Martin Pinedo - Secretario de la Asociación de Centros de FP, FPempresa<br>
+                                </div>                                
+                            </td>
+                        </tr>                 
+                    </table>
+                </div>
+            </div>      
+
+        </section> 
+        <section id="alojamiento" class="container section__container section--background-color-light section__container--padding">   
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;ALOJAMIENTO&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>      
+            <div class="row" >        
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high">
+                        La lista de hoteles cercanos al congreso la puedes ver <a href="Hoteles.pdf">aqui</a><br>
+                    </p>
+                </div>                       
+
+            </div>  
+        </section>
+        <section id="objetivos" class="container section__container section--background-color-light section__container--padding">   
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;OBJETIVOS&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>      
+            <div class="row" >        
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-low">
+                        Nuestra intenci&oacute;n es la de propiciar el encuentro entre los diferentes agentes que intervienen en el proceso de formaci&oacute;n profesional de nuestros j&oacute;venes, 
+                        aportando como valor a&ntilde;adido una serie de ponencias que aporten conocimiento y que propicien un debate, desde diferentes puntos de vista, para concluir
+                        con propuestas concretas sobre el dise&ntilde;o del modelo de FP que necesita nuestra sociedad.                    </p>
+                    <p class="section__text  section--color-dark-high section__text--size-low">
+                        Por otra parte, es evidente, que el congreso busca provocar el debate, la resoluci&oacute;n de dudas, la actualizaci&oacute;n de conocimientos  y la motivaci&oacute;n de los profesores.
+                    </p>
+                    <p class="section__text  section--color-dark-high section__text--size-low">
+                        Por &uacute;ltimo, todo encuentro de estas caracter&iacute;sticas, tambi&eacute;n busca servir de base para compartir experiencias  y sacar conclusiones de la propia interacci&oacute;n entre compa&ntilde;eros del mismo sector, 
+                        creando una din&aacute;mica que sirva como punto de conexi&oacute;n entre los profesionales de la formaci&oacute;n profesional.
+                    </p>                    
+                </div>    
+
+            </div>  
+        </section>
+
+
+        <section id="patrocinadores" class="container section__container section--background-color-light section__container--padding">  
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+
+            <div class="row"  >        
+
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left">organiza</div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.fpempresa.net"><img src="./img/logo/logo_azul_medio.png" alt=""/></a></div>
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left">patrocina</div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.bankia.es"><img src="./img/logo/bankia.gif" alt=""  /></a></div>
+            </div>
+            <br>
+
+        </section>
+
+
+
+        <footer  class="container-fluid section__container  section--background-color-dark section--color-light-high">
+
+            <p class="section__text  section--color-light-high"  >
+<!--                <a href="https://twitter.com/fp_empresa" target="_blank" class="social__icon"><i class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/asociacion.fpempresa" target="_blank" class="social__icon"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp; -->
+                <a href="https://plus.google.com/+FPempresaNet/posts" target="_blank" class="social__icon"><i class="fa fa-google-plus-square"></i></a>
+                <br>
+                <br>
+                <a href="http://fpempresa.net"  class="section--color-light">&copy; 2016 Asociaci&oacute;n de centros de FP (AC-FP)</a>
+                <br>
+                <br>
+            </p> 
+        </footer>
+
+
+        <script type="text/javascript" src="./lib/jquery/js/jquery.js"></script>
+        <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
+
+        <script type='text/javascript' src='./lib/angularjs/js/angular.js'></script>      
+        <script type="text/javascript" src="./lib/easing/js/jquery.easing.min.js"></script>
+
+        <script type="text/javascript" src="index.js"></script>  
+        <script type="text/javascript" src="./common/presentation/directive/clickbuttononclick.js"></script>
+        <script type="text/javascript" src="./common/presentation/service/animatescroll.js"></script>        
+    </body>
+</html>

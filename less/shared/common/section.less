@@ -1,0 +1,175 @@
+@import "mixins-modifiers.less";
+
+.section {
+
+    &--color-dark {
+        .generic-block--color-dark;
+    }
+
+    &--color-dark-high {
+        .generic-block--color-dark-high;
+    }
+
+    &--color-light {
+        .generic-block--color-light;
+    }
+    
+    &--color-light-high {
+        .generic-block--color-light-high;
+    }
+  
+    
+    &--background-color-dark {
+        .generic-block--background-color-dark;
+    }
+
+    &--background-color-dark-high {
+        .generic-block--background-color-dark-high;
+    }
+
+    &--background-color-light {
+        .generic-block--background-color-light;
+    }
+
+    &--background-color-light-high {
+        .generic-block--background-color-light-high;
+    }    
+    
+    &__container {
+        @padding:10px;  
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: @padding;  
+        padding-bottom: @padding;    
+        @media(min-width:767px) {
+            padding-top: @padding*2.5;
+            padding-bottom: @padding*2.5;
+        }  
+        text-align: center;
+        background-size: 100% auto;
+        
+        &--padding {
+            @padding:85px;
+            padding-top: @padding;  
+            padding-bottom: @padding*0.5;    
+
+        }        
+        
+
+    }
+   
+
+    &__main-title {
+        font-size: 30px;
+        @media(min-width:767px) {
+            font-size: 40px;
+        }   
+        font-weight: bold;  
+
+        border-bottom: solid 2px;
+        display: inline;
+
+    }
+
+    &__text {
+        padding-top: 20px;
+        font-size: 15px;
+        @media(min-width:767px) {
+            font-size: 17px;
+        } 
+        
+        &--size-high {
+            font-size: 20px;
+            @media(min-width:767px) {
+                font-size: 22px;
+            }      
+        }
+        
+        &--size-extrahigh {
+            font-size: 25px;
+            @media(min-width:767px) {
+                font-size: 27px;
+            }      
+        }     
+        
+        &--size-low {
+            font-size: 12px;
+            @media(min-width:767px) {
+                font-size: 14px;
+            }      
+        }        
+        
+    }
+
+
+
+    &__separator {   
+        height:1px;
+        border:none;
+        margin-top: 3px;
+        
+        &--color-dark {
+            .generic-block--color-dark;
+            .generic-block--background-color-dark;
+        }
+
+        &--color-dark-high {
+            .generic-block--color-dark-high;
+            .generic-block--background-color-dark-high;
+
+        }
+
+        &--color-light {
+            .generic-block--color-light;
+            .generic-block--background-color-light;
+        }
+
+        &--color-light-high {
+            .generic-block--color-light-high;
+            .generic-block--background-color-light-high;
+        }        
+        
+    }
+
+
+}
+
+a.section--color-dark:link {
+    .generic-block--color-dark;
+} 
+a.section--color-dark-high:link {
+    .generic-block--color-dark-high;
+} 
+a.section--color-light:link {
+    .generic-block--color-light;
+} 
+a.section--color-light-high:link {
+    .generic-block--color-light-high;
+}
+
+
+a.section--color-dark:hover {
+    .generic-block--color-dark;
+} 
+a.section--color-dark-high:hover {
+    .generic-block--color-dark-high;
+} 
+a.section--color-light:hover {
+    .generic-block--color-light;
+} 
+a.section--color-light-high:hover {
+    .generic-block--color-light-high;
+} 
+
+a.section--color-dark:visited {
+    .generic-block--color-dark;
+} 
+a.section--color-dark-high:visited {
+    .generic-block--color-dark-high;
+} 
+a.section--color-light:visited {
+    .generic-block--color-light;
+} 
+a.section--color-light-high:visited {
+    .generic-block--color-light-high;
+}    
