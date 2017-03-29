@@ -5,7 +5,7 @@
   color: #000000;
 }
 .generic-block--color-light {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 .generic-block--color-light-high {
   color: #ffffff;
@@ -17,7 +17,7 @@
   background-color: #000000;
 }
 .generic-block--background-color-light {
-  background-color: #f7f9f8;
+  background-color: #F7F9F8;
 }
 .generic-block--background-color-light-high {
   background-color: #ffffff;
@@ -29,7 +29,7 @@
   color: #000000;
 }
 .section--color-light {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 .section--color-light-high {
   color: #ffffff;
@@ -41,7 +41,7 @@
   background-color: #000000;
 }
 .section--background-color-light {
-  background-color: #f7f9f8;
+  background-color: #F7F9F8;
 }
 .section--background-color-light-high {
   background-color: #ffffff;
@@ -122,8 +122,8 @@
   background-color: #000000;
 }
 .section__separator--color-light {
-  color: #f7f9f8;
-  background-color: #f7f9f8;
+  color: #F7F9F8;
+  background-color: #F7F9F8;
 }
 .section__separator--color-light-high {
   color: #ffffff;
@@ -136,7 +136,7 @@ a.section--color-dark-high:link {
   color: #000000;
 }
 a.section--color-light:link {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 a.section--color-light-high:link {
   color: #ffffff;
@@ -148,7 +148,7 @@ a.section--color-dark-high:hover {
   color: #000000;
 }
 a.section--color-light:hover {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 a.section--color-light-high:hover {
   color: #ffffff;
@@ -160,7 +160,7 @@ a.section--color-dark-high:visited {
   color: #000000;
 }
 a.section--color-light:visited {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 a.section--color-light-high:visited {
   color: #ffffff;

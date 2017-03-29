@@ -28,14 +28,14 @@
 .navbar-custom .navbar-brand .navbar-toggle {
   padding: 4px 6px;
   font-size: 16px;
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
   outline: none;
 }
 .navbar-custom a {
-  color: #f7f9f8;
+  color: #F7F9F8;
 }
 .navbar-custom .nav li.active {
   outline: nonte;

@@ -105,7 +105,7 @@
   border-radius: 35px;
   font-size: 40px;
   color: #F7F9F8;
-  background: transparent;
+  background: #FF9E1B;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
@@ -114,7 +114,7 @@
 .button-circle:focus {
   outline: none;
   color: #F7F9F8;
-  background: rgba(247, 249, 248, 0.1);
+  background: rgba(255, 158, 27, 0.4);
 }
 .button-circle i.animated {
   -webkit-transition-property: -webkit-transform;
